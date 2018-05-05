@@ -26,7 +26,9 @@ public class MapProgram {
         languages.put("Python", "an interpreted, object-oriented, high-level programming " +
                 "language with dynamic semantics");
         languages.put("Algol", "an algorithmic language");
-        languages.put("BASIC", "Beginners All Purpose Symbolic Instruction Code");
+        //languages.put("BASIC", "Beginners All Purpose Symbolic Instruction Code");
+        //step 9 this produces a null
+        System.out.println(languages.put("BASIC", "Beginners All Purpose Symbolic Instruction Code"));
         languages.put("Lisp", "Thererin lies MADNESS!!");
 
         //step 4 run
@@ -75,6 +77,23 @@ public class MapProgram {
             //note random order
 
         }
+
+        //step 9, above produces a null
+        //run
+        /*
+        Java added successfully
+        #########################################
+        null
+        a compiled high level, object-orientated, platform independent language
+        this is a Java course!
+        Java is already in the map
+        ==================================================================
+        Java : this is a Java course!
+        BASIC : Beginners All Purpose Symbolic Instruction Code
+        Lisp : Thererin lies MADNESS!!
+        Python : an interpreted, object-oriented, high-level programming language with dynamic semantics
+        Algol : an algorithmic language
+         */
 
     }
 
