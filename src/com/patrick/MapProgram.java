@@ -13,9 +13,9 @@ public class MapProgram {
         //<String, String> = key, value
         Map<String, String> languages = new HashMap<>();
         //step 7
-        if(languages.containsKey("Java")) {
+        if (languages.containsKey("Java")) {
             System.out.println("Java already exists");
-        }else {
+        } else {
             languages.put("Java", "a compiled high level, object-orientated, " +
                     "platform independent language");
             System.out.println("Java added successfully");
@@ -44,9 +44,9 @@ public class MapProgram {
          */
 
         //step 6
-        if(languages.containsKey("Java")) {
+        if (languages.containsKey("Java")) {
             System.out.println("Java is already in the map");
-        }else{
+        } else {
             languages.put("Java", "this is a Java course");
             //Java is already in the map
             //note 2nd line is not overwritten
@@ -58,6 +58,21 @@ public class MapProgram {
             this is a Java course!
             Java is already in the map
              */
+
+        }
+
+        System.out.println("==================================================================");
+        //step 8 keyset
+        for (String key : languages.keySet()) {
+            System.out.println(key + " : " + languages.get(key));
+            /*
+            Java : this is a Java course!
+            BASIC : Beginners All Purpose Symbolic Instruction Code
+            Lisp : Thererin lies MADNESS!!
+            Python : an interpreted, object-oriented, high-level programming language with dynamic semantics
+            Algol : an algorithmic language
+             */
+            //note random order
 
         }
 
